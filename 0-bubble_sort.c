@@ -10,14 +10,14 @@
 
 int bubble_sort(int *array, int size)
 {
-	int i, j = 0, temp;
+	int i, j, temp;
 
 	if (size < 2)
 	{
 		return (0);
 	}
 
-	while (j < size)
+	for (j = 0; j < size; j++)
 	{
 		for (i = 0; i < size - 1; i++)
 		{
@@ -30,7 +30,6 @@ int bubble_sort(int *array, int size)
 			}
 		}
 
-		j++;
 	}
 
 
