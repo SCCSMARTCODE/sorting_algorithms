@@ -33,7 +33,7 @@ void quick_sort(int *array, size_t size);
 void sorting(int *array, int low, int high, size_t size);
 int partition(int *array, int low, int high, size_t size);
 void swap(int *a, int *b);
-listint_t *swap_list(listint_t *a, listint_t *b, listint_t **head);
+void swap_list(listint_t *a, listint_t *b, listint_t **head);
 int check_if_all_sorted(listint_t *list);
 int *get_list(int *list, int max);
 
