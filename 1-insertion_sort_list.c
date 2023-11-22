@@ -8,12 +8,11 @@
  */
 void insertion_sort_list(listint_t **list)
 {
-	listint_t *head, *current;
-	int run = 0;
-
 	if (list == NULL || *list == NULL || (*list)->next == NULL)
 		return;
 
+	listint_t *head, *current;
+	int run = 0;
 
 	head = *list;
 
@@ -24,10 +23,10 @@ void insertion_sort_list(listint_t **list)
 		{
 			if (current->n > current->next->n)
 			{
-			head = swap_list(current, current->next, &head);
-			run = check_if_all_sorted(head);
-			print_list(head);
-			break;
+				head = swap_list(current, current->next, &head);
+				run = check_if_all_sorted(head);
+				print_list(head);
+				break;
 			}
 			current = current->next;
 		}
@@ -37,7 +36,7 @@ void insertion_sort_list(listint_t **list)
 }
 
 /**
- * check_if_all_sorted - Checks if a doubly linked list is sorted.
+ * check_if_all_sorted - Checks if a doubly linked list is sorted in ascending order.
  *
  * @list: Pointer to the head of the doubly linked list.
  *
