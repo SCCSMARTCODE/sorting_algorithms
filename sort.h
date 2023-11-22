@@ -30,9 +30,9 @@ void selection_sort(int *array, size_t size);
 void quick_sort(int *array, size_t size);
 
 /**sorting-function functions**/
-void sorting(int *array, int low, int high, int max);
-int partition(int *array, int start, int end, int max);
-int swap(int *a, int *b);
+void sorting(int *array, int low, int high, size_t size);
+int partition(int *array, int low, int high, size_t size);
+void swap(int *a, int *b);
 listint_t *swap_list(listint_t *a, listint_t *b, listint_t **head);
 int check_if_all_sorted(listint_t *list);
 int *get_list(int *list, int max);
