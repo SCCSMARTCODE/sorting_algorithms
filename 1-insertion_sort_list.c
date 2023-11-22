@@ -37,7 +37,7 @@ void insertion_sort_list(listint_t **list)
 }
 
 /**
- * check_if_all_sorted - Checks if a doubly linked list is sorted in ascending order.
+ * check_if_all_sorted - Checks if a doubly linked list is sorted.
  *
  * @list: Pointer to the head of the doubly linked list.
  *
